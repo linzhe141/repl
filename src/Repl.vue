@@ -84,6 +84,7 @@ defineExpose({ reload })
 
 <template>
   <div class="vue-repl">
+    <div style="color: #fff">ssr->{{ ssr }}</div>
     <SplitPane :layout="layout">
       <template #[editorSlotName]>
         <EditorContainer :editor-component="editor" />
